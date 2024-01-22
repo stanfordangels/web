@@ -4,159 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i&display=swap">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Crimson Text', serif;
-            background-color: #fff; /* Set your background color */
-            color: #000; /* Set default text color */
-            font-size: 16px;
-            line-height: 1.6;
-        }
+    <!-- link rel="stylesheet" href="styles.css" --> 
 
-        header {
-            background-color: #fff; /* Set the header background color */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            box-shadow: 0 8px 5px -5px rgba(0, 0, 0, 0.4);/* Adjusted box-shadow for a subtle effect */
-            margin-bottom: 0; /* Remove margin-bottom */
-        }
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Crimson Text', serif;
+        background-color: #fff;
+        color: #000;
+        font-size: 16px;
+        line-height: 1.6;
+    }
 
-        #logo {
-            max-width: 150px;
-            background-color: #fff; /* Set the logo background color */
-        }
+    header {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0 8px 5px -5px rgba(0, 0, 0, 0.4);
+        margin-bottom: 0;
+    }
 
+    #logo {
+        max-width: 150px;
+        background-color: #fff;
+    }
+
+    nav {
+        background-color: #fff;
+        text-align: right;
+        padding: 10px;
+        display: flex;
+        align-items: center; /* Center items vertically in flex container */
+    }
+
+    nav a {
+        margin: 0 10px;
+        color: #000;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    #landscape {
+        position: relative;
+    }
+
+    #landscape img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #landscape .overlay-text {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 50px 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #section1 {
+        background-color: #8C1515;
+        color: #fff;
+    }
+
+    #section2 {
+        background-color: #f9f9f9;
+        color: #000;
+    }
+
+    #section3 {
+        background-color: #8C1515;
+        color: #fff;
+    }
+
+    #about {
+        background-color: #f9f9f9;
+        color: #000;
+    }
+
+    #contact {
+        /* background-color: #8C1515;
+        color: #fff; */
+    }
+
+    .carousel-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .video-card {
+        flex: 0 0 auto;
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    /* New styles for about-carousel-container and about-thumbnails */
+    .about-carousel-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    /* Add the new styles for about-thumbnails after the existing styles */
+    .about-thumbnails {
+        flex: 0 0 calc(25% - 20px); /* Adjust the percentage as needed, considering padding */
+        margin-bottom: 20px;
+        text-align: center; /* Center text in about-thumbnails */
+    }
+
+    .about-thumbnails img {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    /* Adjusted styles to reduce space between name and title */
+    .about-thumbnails .leader-name {
+        margin-bottom: 0px; /* Adjust the value as needed */
+    }
+
+    .about-thumbnails .leader-title {
+        margin-top: 1px; /* Adjust the value as needed */
+    }
+
+    #toTop {
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 24px;
+        color: #8C1515;
+    }
+
+    .menu-icon {
+        display: none; /* Hide the menu icon by default */
+    }
+    
+    /* Media query for mobile styles */
+    @media screen and (max-width: 768px) {
+    #landscape {
+    display: none;
+    }
         nav {
-            background-color: #fff; /* Set the navigation background color */
-            text-align: right;
-            padding: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+            display: none; /* Hide the navigation links by default */
+        }
+
+        nav.show-menu {
+            display: flex; /* Show the navigation links when the show-menu class is present */
         }
 
         nav a {
-            margin: 0 10px;
-            color: #000; /* Set the navigation link color */
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            margin: 10px 0;
         }
 
-        nav a:hover {
-            background-color: #000; /* Set the navigation link hover background color */
-            color: #fff; /* Set the navigation link hover color */
-        }
-
-        #landscape {
-            position: relative;
-        }
-
-        #landscape img {
-            width: 100%;
-            object-fit: cover;
-        }
-
-        #landscape .overlay-text {
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #fff;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 50px 20px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        #section1 {
-            background-color: #8C1515;
-            color: #fff;
-        }
-
-        #section2 {
-            background-color: #f9f9f9;
-            color: #000;
-        }
-
-        #section3 {
-            background-color: #8C1515;
-            color: #fff;
-        }
-
-        #about {
-            background-color: #f9f9f9;
-            color: #000;
-        }
-
-        #contact {
-            background-color: #8C1515;
-            color: #fff;
-        }
-
-        .carousel-container {
-            overflow-x: auto;
-            white-space: nowrap;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .video-card {
-            flex: 0 0 auto;
-            width: 300px;
-            margin-right: 20px;
-        }
-
-	/* New styles for about-carousel-container and about-thumbnails */
-	.about-carousel-container {
-            overflow-x: auto;
-            white-space: nowrap;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-	}
-	
-	/* Add the new styles for about-thumbnails after the existing styles */
-	.about-thumbnails {
-            flex: 0 0 calc(25% - 20px); /* Adjust the percentage as needed, considering padding */
-            margin-bottom: 20px;
-	}
-
-	.about-thumbnails img {
-            width: 50%;
-            border-radius: 50%; /* Optional: Add border-radius for rounded thumbnails */
-	}
-
-	/* Adjusted styles to reduce space between name and title */
-	.about-thumbnails .leader-name {
-            margin-bottom: 0px; /* Adjust the value as needed */
-	}
-
-	.about-thumbnails .leader-title {
-            margin-top: 1px; /* Adjust the value as needed */
-	}
-	
-	#toTop {
+        .menu-icon {
             display: block;
-            text-align: center;
-            margin-top: 40px;
-            font-size: 24px;
-            color: #8C1515;
         }
-    </style>
+    }
+</style>
+
 </head>
 <body>
     <header>
         <img id="logo" src="imgs/StanfordAngelsLogo_50pt.jpg" alt="Stanford Angels & Entrepreneurs United Logo">
+        <div class="menu-icon">
+            <img src="imgs/menu_icon.png" alt="Menu Icon">
+        </div>
         <nav>
             <a href="#section1">Founders</a>
             <a href="#section2">Angel Investors</a>
@@ -172,18 +209,21 @@
     </section>
 
     <section id="section1" style="text-align: center;">
-        <p style="font-weight: bold;">FOUNDERS</p>
+      <!-- Content for section1 -->
+    <p style="font-weight: bold;">FOUNDERS</p>
         <p><a href="https://bit.ly/pitchangels" target="_blank">Apply</a> to pitch to our angel members for your startup's fundraise at our next curated session.</p>
         <p style="text-align: justify;">Entrepreneurs often face a lonely journey and we strive to change that independent of geography. 
            To hear the latest from thought leaders in entrepreneurship, angel investing, venture capital, law, banking, accounting and more follow us on <a href="https://www.linkedin.com/company/stanfordunited" target="_blank">LinkedIn</a> to receive notices for upcoming remote events and programming. You may also bookmark our virtual <a href="https://bit.ly/stanfordunited" target="_blank">events page</a>.
         
-          Don't miss your chance to pitch to a Midas investor! Or, get hands-on coaching during office hours with an industry veteran.</p>
+          Don't miss your chance to pitch to a Midas investor! Or, get hands-on coaching during office hours with an industry veteran.</p>      
         <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
-	<img src="imgs/white_up_arrow.png" alt="arrow up" style="height:25px; width:auto;"></a>
+            <img src="imgs/white_up_arrow.png" alt="arrow up" style="height:25px; width:auto;">
+        </a>
     </section>
 
     <section id="section2" style="text-align: center;">
-      <p style="font-weight: bold;">ANGEL INVESTORS</p>
+      <!-- Content for section2 -->
+  <p style="font-weight: bold;">ANGEL INVESTORS</p>
       <p>Become an official angel investor with <a href="https://groups.stanford.edu/topics/9391/memberships" target="_blank">membership</a> to support founders in our community. You must be an <a href="https://www.sec.gov/education/capitalraising/building-blocks/accredited-investor" target="_blank">accredited investor</a>.</p>
       <p style="text-align: justify;">Angel members of our group gain access to exclusive investment opportunities with some of the most promising founders around. We have supported 100+ founders to date.
       Engage in discussions, networking events, and contribute to the growth of innovative ventures.
@@ -191,17 +231,19 @@
       <p style="text-align: justify;"> 
 	Note that Stanford Angels & Entrepreneurs United (SAEU) aims to provide a forum for interesting early stage companies at a fundraising stage to present. However SAEU is not a fund, does not do crowd sourced fundraising, nor does it provide investment advice or recommendations. Any due diligence, negotiation or investment activity conducted by members or officers of SAEU is conducted solely as an individual of their own accord as an accredited investor, not as an officer or representative of SAEU, Stanford University, or Stanford Alumni Association. Stanford University and Stanford Alumni Association are not in any way endorsing or assessing the companies or entrepreneurs who present at SAEU nor are they involved in SAEU members or officers’ individual investment decisions regarding these companies.
 	</p>
-
-
-      <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
-      <img src="imgs/crimson_up_arrow.png" alt="arrow up" style="height:25px; width:auto;"></a>
+    
+        <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
+            <img src="imgs/crimson_up_arrow.png" alt="arrow up" style="height:25px; width:auto;">
+        </a>
     </section>
 
     <section id="section3" style="text-align: center;">
-      <p style="font-weight: bold;">LEARN</p>
-      <p>Brush up on startup formation, equity, accelerators, fundraising, Midas investor lessons and much more from our educational <a href="https://youtube.com/@stanfordangels" target="_blank">recorded events</a></p>
+      <!-- Content for section3 -->
+  <p style="font-weight: bold;">LEARN</p>
+      <p>Brush up on startup formation, equity, accelerators, fundraising, Midas investor lessons and much more from our educational <a href="https://youtube.com/@stanfordangels" target="_blank">recorded events</a></p>    
         <div class="carousel-container">
-            <div class="video-card">
+          <!-- Carousel content -->
+        <div class="video-card">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/ljBOD7LImxA" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-card">
@@ -232,22 +274,21 @@
             <iframe width="100%" height="200" src="https://www.youtube.com/embed/eZwGwt5ZtO4" frameborder="0" allowfullscreen></iframe>
         </div>
 	    
-            <!-- Add more video cards as needed -->
+            <!-- Add more video cards as needed -->	  
         </div>
         <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
-	<img src="imgs/white_up_arrow.png" alt="arrow up" style="height:25px; width:auto;"></a>
+            <img src="imgs/white_up_arrow.png" alt="arrow up" style="height:25px; width:auto;">
+        </a>
     </section>
 
-    <!-- ... (rest of your sections) ... -->
-
     <section id="about" style="text-align: center;">
-    <p style="font-weight: bold;">ABOUT</p>
+        <!-- Content for About section -->
+<p style="font-weight: bold;">ABOUT</p>
     <p style="text-align: justify;">Our mission is to unite Stanford's startup community in innovation centers beyond California with regular remote programming and connection opportunities. In Spring 2020, we started our journey with an official charter from Stanford Alumni Association. We have grown to a community of 1200+ alumni members in three years since. Our community attracts a wide variety of Stanford alumni and students from different generations, regions, industries and backgrounds united by a common entrepreneurial spirit. Connect with members of our leadership team to share your feedback and suggestions for our community.</p>
 
-    <!-- Leadership Team -->
-    
     <div id="leadership-container" class="about-carousel-container">
-    <!-- Add team member thumbnails dynamically here with the "about-thumbnails" class -->
+          <!-- Leadership team thumbnails -->
+<!-- Add team member thumbnails dynamically here with the "about-thumbnails" class -->
         <div class="about-thumbnails">
             <img src="imgs/team/SheilaPresident.jpg" alt="Sheila Proeve">
             <div class="leader-name"><a href="https://www.linkedin.com/in/sproeve" target="_blank">Sheila Proeve</a></div>
@@ -318,42 +359,47 @@
             <img src="imgs/team/BlankPortrait.jpg" alt="Ted Duclos">
             <div class="leader-name"><a href="https://www.linkedin.com/in/ted-duclos-4a917514" target="_blank">Ted Duclos</a></div>
             <div class="leader-title">SME Committee</div>
-        </div>
-	
-        <!-- Repeat for other team members -->
-
-        <!-- Placeholder for Future Leader -->
-	<div class="about-thumbnails">
-            <img src="imgs/team/QuestionPortrait.jpg" alt="Future Leader">
-            <div class="leader-name"><a href="https://bit.ly/leadstanford" target="_blank">Future Leader</a></div>
-            <div class="leader-title">Open Roles</div>
-        </div>
-
+        </div>  
     </div>
-
-    <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
-    <img src="imgs/crimson_up_arrow.png" alt="arrow up" style="height:25px; width:auto;"></a>
+        <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
+            <img src="imgs/crimson_up_arrow.png" alt="arrow up" style="height:25px; width:auto;">
+        </a>
     </section>
+
+    <footer id="contact" style="text-align: center; padding: 20px; background-color: #8C1515; color: #fff;">
+        <!-- Copyright sign and organization name -->
+        <p>&copy; 2024 Stanford Angels & Entrepreneurs United</p>
+        <!-- Email icon and link -->
+        <a href="mailto:saeUnited@alumni.stanford.edu">
+            <img src="imgs/w_mail_icon.png" alt="Email Icon" style="height:36px; width: auto;">
+        </a>
+        &nbsp;
+        <!-- LinkedIn icon and link -->
+        <a href="https://www.linkedin.com/company/stanfordunited" target="_blank">
+            <img src="imgs/w_linkedin_icon.png" alt="LinkedIn Icon" style="height:36px; width: auto;">
+        </a>
+        &nbsp;
+        <!-- YouTube icon and link -->
+        <a href="https://www.youtube.com/@stanfordangels" target="_blank">
+            <img src="imgs/w_youtube_icon.png" alt="YouTube Icon" style="height:36px; width: auto;">
+        </a>
+        &nbsp;
+        <!-- Stanford Groups private site -->
+        <a href="https://groups.stanford.edu/topics/9391/events" target="_blank">
+            <img src="imgs/w_private_site_outline.png" alt="Private Icon" style="height:36px; width: auto;">
+        </a>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const nav = document.querySelector("nav");
+
+            menuIcon.addEventListener("click", function () {
+                nav.classList.toggle("show-menu");
+            });
+        });
+    </script>
+
 </body>
-<footer style="text-align: center; padding: 20px; background-color: #8C1515; color: #fff;">
-
-    <!-- Copyright sign and organization name -->
-    <p>Copyright &copy; 2024 Stanford Angels & Entrepreneurs United</p>
-
-    <!-- Email icon and link -->
-    <a href="mailto:saeUnited@alumni.stanford.edu">
-        <img src="imgs/w_mail_icon.png" alt="Email Icon" style="height:36px; width: auto;"></a>
-    &nbsp;
-    <!-- LinkedIn icon and link -->
-    <a href="https://www.linkedin.com/company/stanfordunited" target="_blank">
-      <img src="imgs/w_linkedin_icon.png" alt="LinkedIn Icon" style="height:36px; width: auto;"></a>
-    &nbsp;
-    <!-- YouTube icon and link -->
-    <a href="https://www.youtube.com/@stanfordangels" target="_blank">
-      <img src="imgs/w_youtube_icon.png" alt="YouTube Icon" style="height:36px; width: auto;"></a>
-    &nbsp;
-    <!-- Stanford Groups private site -->
-    <a href="https://groups.stanford.edu/topics/9391/events" target="_blank">
-        <img src="imgs/w_private_site_outline.png" alt="Private Icon" style="height:36px; width: auto;"></a>    
-</footer>
 </html>
