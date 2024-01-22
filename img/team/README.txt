@@ -1,0 +1,1 @@
+Folder with team photos
