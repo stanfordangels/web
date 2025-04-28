@@ -221,6 +221,10 @@
             display: block;
         }
 	/* ----- 3 BUTTON HERO SECTION ----- */
+    #hero { /* Add this to target the hero section on mobile */
+        overflow: hidden; /* Try this to contain potential overflow */
+        height: auto !important; /* Override the inline style on mobile */
+    }	    
         #hero > div > div > a > button {
             padding: 8px 12px; /* Further reduce padding for mobile */
             margin: 5px 0; /* Adjust margin for stacked buttons */
@@ -242,6 +246,7 @@
 	/* ----- END BUTTON HERO SECTION ----- */
         section { /* Added this to address mobile padding */
             padding: 30px 10px;
+            box-sizing: border-box; /* Apply to sections as well */		
         }	    
     }
 
