@@ -2,54 +2,124 @@
 const articlesData = [
     {
         id: 1,
-        slug: "future-of-angel-investing-2025",
-        title: "The Future of Angel Investing in 2025",
-        author: "Stanford Angels Team",
-        date: "2025-01-15",
-        excerpt: "Exploring emerging trends in angel investing and what Stanford entrepreneurs should know about the evolving landscape of early-stage funding.",
+        slug: "q1-newsletter",
+        title: "Q1 Newsletter",
+        author: "Stanford Angels & Entrepreneurs United",
+        date: "2025-02-01",
+        excerpt: "Welcome to the inaugural Stanford Angels and Entrepreneurs United (SAEU) Newsletter! Inside, you'll find our group's upcoming remote and cross-country events, recaps of recent activities, and a new classifieds section.",
         content: `
-            <p>The angel investing landscape is rapidly evolving as we enter 2025. With new technologies, changing market dynamics, and shifting investor preferences, Stanford entrepreneurs need to understand these trends to successfully raise capital.</p>
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h2>Q1 Newsletter February 2025</h2>
+                <h3>Stanford Angels & Entrepreneurs United</h3>
+            </div>
             
-            <h3>Key Trends Shaping Angel Investing</h3>
-            <p>1. <strong>AI and Machine Learning Focus:</strong> Angel investors are increasingly interested in startups leveraging artificial intelligence and machine learning to solve real-world problems.</p>
+            <p>Welcome to the inaugural Stanford Angels and Entrepreneurs United (<strong>SAEU</strong>) Newsletter! Inside, you'll find our group's upcoming remote and cross-country events, recaps of recent activities, and a new classifieds section for entrepreneurs seeking teammates. We're delighted to announce that Richard Hartung, MBA '86, a valued contributor on our Investment Committee, has now joined us as Co-President! Read on for details.</p>
+
+            <h2>EVENTS</h2>
+
+            <h3>Virtual: Investing in Sustainability Startups</h3>
+            <p><strong>Wednesday, March 26, 2025</strong><br>
+            <strong>4 - 5pm PT on zoom</strong><br>
+            Register: <a href="https://bit.ly/investmarch2025" target="_blank">https://bit.ly/investmarch2025</a></p>
             
-            <p>2. <strong>Sustainability and Climate Tech:</strong> There's a growing emphasis on companies addressing climate change and sustainability challenges.</p>
+            <p>Join us for our first Investing Insights Panel, focusing on sustainability innovation. Expert panelists focused on investments in the sector will share their perspectives on key trends and what investors as well as entrepreneurs should look for in the coming year. The session will highlight examples of start-ups supporting environmental sustainability and opportunities for angel investors.</p>
+
+            <h3>Miami: eMerge Americas Perk Me Up Mixer</h3>
+            <p><strong>Thursday, March 27, 2025</strong><br>
+            <strong>1:30pm - 2:30pm ET</strong><br>
+            <strong>XO Espresso Bar in Miami Beach, FL</strong><br>
+            Register: <a href="https://groups.stanford.edu/events/117227" target="_blank">https://groups.stanford.edu/events/117227</a></p>
             
-            <p>3. <strong>Remote-First Investment:</strong> The pandemic has accelerated the adoption of remote due diligence and investment processes.</p>
+            <p>SAEU is co-hosting an in-person alumni networking reception across the street from the eMerge Americas Conference in Miami Beach 27-28 March. Join us for a conference break and connect over drinks, treats and conversation.</p>
+
+            <h3>DC Area: Angels & Founders Meetup</h3>
+            <p><strong>Tuesday, April 22, 2025</strong><br>
+            <strong>6:30pm ET</strong><br>
+            <strong>1299 Pennsylvania Ave, Washington DC</strong></p>
             
-            <h3>What This Means for Stanford Founders</h3>
-            <p>Stanford founders should focus on clearly articulating their value proposition, demonstrating traction, and building relationships with investors who understand their market.</p>
+            <p>SAEU is hosting an in-person networking meet up for Stanford alumni angels and founders in the Washington DC, Virginia and Maryland metro area on April 22, 2025. Stay tuned for registration.</p>
+
+            <h3>Virtual: Curated Pitch for Stanford Angels</h3>
+            <p><strong>April 2025</strong><br>
+            <strong>4-5:30pm PT on zoom</strong></p>
             
-            <p>At Stanford Angels & Entrepreneurs United, we're committed to connecting our community with these evolving opportunities and helping founders navigate the changing investment landscape.</p>
+            <p>If you're a founder interested in pitching to Stanford Angels during your fundraise, you can apply already at <a href="https://bit.ly/pitchangels" target="_blank">this form</a>. Accredited angel investors interested in attending may secure angel membership <a href="https://groups.stanford.edu/topics/9391/memberships" target="_blank">here</a>. For more information, please contact saeUnited@alumni.stanford.edu.</p>
+
+            <h3>SAEU Summer Gatherings</h3>
+            <p><strong>SAEU</strong> members will be hosting events in cities around the United States this summer for angels and founders. Events are already being scheduled for Seattle and Boston, and we expect to expand to more cities. If you are interested in hosting an event with us and need help with promotion and funds, please contact saeUnited@alumni.stanford.edu.</p>
+
+            <h2>CO-FOUNDER CLASSIFIEDS</h2>
+
+            <h3>AI Hardware</h3>
+            <p><a href="https://www.linkedin.com/in/jyotindrashakya" target="_blank">Jyotindra Shakya, PhD</a> (MS '13) is looking for a <strong>technical</strong> co-founder for his early stage startup <strong>CompLogic</strong> in the AI hardware, efficient computation and crypto space. Jyotindra's expertise: Hardware, SoC Design and Algorithms.</p>
+
+            <h3>Media & Entertainment</h3>
+            <p><a href="https://www.linkedin.com/in/nicktranstanford" target="_blank">Nick Tran</a> (CS '06) is looking for a <strong>sales & marketing</strong> co-founder for pre-seed startup <strong>Slay Platforms</strong>, a new social media platform employing an innovative recommendation system. Nick's expertise: SWE, AI, Recommendation Systems, Robotics, Perception.</p>
+
+            <h2>RECAP: PANEL INSIGHTS: VENTURE TRENDS & 2025 OUTLOOK</h2>
+            
+            <p>Hunter Nadler, who leads JP Morgan's startup banking business on the East Coast, and Sale Kwan, a partner at the emerging companies and venture capital group of Cooley LLP based in Palo Alto, shared their insights at a panel moderated by SAEU co-president Sheila Proeve in January 2025. Key insights included:</p>
+
+            <h3>Outlook for startups</h3>
+            <p>Sale said the VC industry seems to have stabilized and there are signs of an uptick in round size and valuation. The elephant in the room is AI, with outlier deals driving deal volume. Hunter said median seed stage post-money valuations are at an all-time high, with the top quartile seed companies increasing 65% year over year. However, there are more down rounds for seed companies going for series A.</p>
+
+            <h3>Cadence of VC investment in 2025</h3>
+            <p>There is muted seasonality, and VCs are looking at the longer term. The median time between financings is getting longer, at 25 months. Also, companies are staying private longer. Many companies are looking to raise capital.</p>
+
+            <h3>When early-stage founders should think about raising this year</h3>
+            <p>The principle is to raise the minimum that can get you to the next inflection point. If you raise more, you're getting over-diluted. Key factors for early-stage founders are whether they are raising capital to solve a problem or to scale a solution. Also, invest in relationships.</p>
+
+            <h3>Key industries poised for explosive growth</h3>
+            <p>Applied tech and commercializing groundbreaking scientific breakthroughs in sectors such as defense, space tech, robotics, and semiconductors. The tech supply chain is going to drive innovation. AI powered agents.</p>
+
+            <h3>Legal developments affecting startups and venture capital</h3>
+            <p>The Corporate Transparency Act, currently suspended, requires certain companies to report beneficial ownership. OISP, the Outbound Investment Security Program, which will apply to investment transactions by a US person into a company that has some nexus to China, includes semiconductors, quantum technologies and AI. Another is the use of AI in employment and hiring, as states such as New York put out laws that regulate the use of AI in that area.</p>
+
+            <h3>Venture, debt, cash management - optimizing the runway</h3>
+            <p>Think timing, holding periods, wealth strategies, and pre-transaction planning for the company and for individuals. Next is looking at the means of financing, via debt, receivables or equity. Look at equity as the most efficient way to deploy flexible cash. Equity is not good to buy equipment. Specific capital can be cheaper and non-dilutive. Start-ups requiring big equipment could raise equity to buy it and be diluted, or banks are willing to lend against the equipment.</p>
+
+            <h3>Advice for angel investors and LPs</h3>
+            <p>Follow friends and people you trust. High quality investors usually have overlap with portfolio companies and industries. For angels, it is patience - for these companies to turn around is going to take a long time. For angels, do stuff you love and invest in companies you really love.</p>
+
+            <h3>Capital going into robotics</h3>
+            <p>There will be interest by both government and opportunistic investors. Traditionally, venture funds have a 10-year life. They put their capital in in the first 2-3 years and want exits to happen within 10 years, so they don't want capital intensive businesses.</p>
+
+            <h3>Advice for founders and angels</h3>
+            <p>Hunter said to think about professional and personal technology, business and financial platforms, the community as a platform, and platform impact and scalability. Sale said that although he often sees people trying to solve a business problem with legal solutions, legal is often an expensive and ineffective way to solve a problem so founders should focus on communication, relationships and common sense.</p>
+
+            <p>A <a href="https://youtu.be/Qq04oJs55u8" target="_blank">recording</a> is available.</p>
+
+            <h2>RECAP: FEBRUARY PITCH</h2>
+            
+            <p>Five excellent start-ups pitched at the SAEU Pitch Day event on 5 February. Short summaries of the companies are below, and more information is available for potential angel investors.</p>
+
+            <h3>Screen360.tv</h3>
+            <p>Screen360.tv enables co-viewing of international films by students to enable them to ignite insight and exercise collaborative skills that will result in tomorrow's innovation. With the support of the National Science Foundation, it is developing a distance-learning platform that uses international films to connect young people globally, and to ignite empathy and communication.</p>
+
+            <h3>ANI. ML Health</h3>
+            <p>ANI. ML Health is using AI solutions to improve veterinary health care. A typical veterinary doctor spends 20-60 minutes to review the medical history and records of each patient, and 20-60 minutes to write the medical record after the visit. ANI. ML provides specific platforms, tailored to the veterinary medical space, that summarize medical records that it says are accurate, reliable, useful and improve veterinary doctors' productivity significantly.</p>
+
+            <h3>MRGN</h3>
+            <p>MRGN helps small businesses, starting with restaurants, to identify under performance, overspending, areas of growth and potential areas of improvement. It uses the restaurant's P&L data and live economic data to give a complete picture of the business.</p>
+
+            <h3>Misogi Labs</h3>
+            <p>Misogi Labs empowers pharma to reduce the time and cost of developing small molecule drugs by replacing trial and error experiments with AI optimization. Today, less than 5% of drugs make it to the final patients, due to the poor ability of drugs to cross biological barriers.</p>
+
+            <h3>Melurna</h3>
+            <p>Melurna focuses on eliminating companies' third-party data leaks. It uses AI in its privacy risk platform to detect, manage and help prevent data leaks to third parties automatically. It identifies PII such as personal health information, credit card data or financial information.</p>
+
+            <p>If you are an angel member and would like to connect with any of these start-ups, please contact us at saeUnited@alumni.stanford.edu for an introduction to the founders.</p>
+
+            <h2>CALL FOR LEADERS</h2>
+            
+            <p>We are growing our <strong>SAEU</strong> (United) cross-country leadership team and would love to hear from those who'd like to be more active in our group. If you are passionate about alumni engagement around entrepreneurship and angel investing <strong>across the country</strong> beyond California, please check out these <a href="https://bit.ly/leadstanford" target="_blank">opportunities</a> or send an email to saeUnited@alumni.stanford.edu to become more involved.</p>
+
+            <h2>DISCLAIMER</h2>
+            
+            <p><em>Stanford Angels & Entrepreneurs United aims to provide a forum for interesting early stage companies at a fundraising stage to present. However Stanford Angels & Entrepreneurs United is not a fund, does not do crowd sourced fundraising, nor does it provide investment advice or recommendations. Any due diligence, negotiation or investment activity conducted by members or officers of Stanford Angels & Entrepreneurs United is conducted solely as an individual of their own accord as an accredited investor, not as an officer or representative of Stanford Angels & Entrepreneurs United, Stanford University, or Stanford Alumni Association. Stanford University and Stanford Alumni Association are not in any way endorsing or assessing the companies or entrepreneurs who present at Stanford Angels & Entrepreneurs United nor are they involved in Stanford Angels & Entrepreneurs United members or officers' individual investment decisions regarding these companies.</em></p>
         `,
-        tags: ["Angel Investing", "Trends", "2025"],
-        readTime: "5 min read"
-    },
-    {
-        id: 2,
-        slug: "building-first-pitch-deck-stanford",
-        title: "Building Your First Pitch Deck: A Stanford Perspective",
-        author: "Richard Hartung",
-        date: "2025-01-10",
-        excerpt: "Essential elements every Stanford entrepreneur should include in their pitch deck to capture investor attention and secure funding.",
-        content: `
-            <p>Creating an effective pitch deck is both an art and a science. After reviewing hundreds of pitches at Stanford Angels, here are the key elements that make a difference.</p>
-            
-            <h3>The Essential Slides</h3>
-            <p>1. <strong>Problem:</strong> Clearly define the problem you're solving</p>
-            <p>2. <strong>Solution:</strong> Your unique approach to solving it</p>
-            <p>3. <strong>Market:</strong> Size and opportunity</p>
-            <p>4. <strong>Business Model:</strong> How you make money</p>
-            <p>5. <strong>Traction:</strong> Proof of concept and early results</p>
-            <p>6. <strong>Team:</strong> Why you're the right team to execute</p>
-            <p>7. <strong>Financials:</strong> Revenue projections and key metrics</p>
-            <p>8. <strong>Funding Ask:</strong> How much you need and what you'll use it for</p>
-            
-            <h3>Stanford-Specific Tips</h3>
-            <p>Leverage your Stanford connections and highlight any university-based research or partnerships that give you a competitive advantage.</p>
-        `,
-        tags: ["Pitch Deck", "Fundraising", "Stanford"],
-        readTime: "7 min read"
+        tags: ["Newsletter", "Events", "Networking", "Pitch"],
+        readTime: "12 min read"
     }
 ];
 
