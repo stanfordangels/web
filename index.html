@@ -15,18 +15,44 @@
 <!-- End of Google tag -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i&display=swap">
-    <!-- link rel="stylesheet" href="styles.css" --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
 <style>
     body {
         margin: 0;
         padding: 0;
-        font-family: 'Crimson Text', serif;
+        font-family: 'Inter', sans-serif;
         background-color: #fff;
         color: #000;
         font-size: 16px;
         line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6, p[style*="font-weight: bold"] {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    .hero-heading {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        font-size: 2.5em;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .hero-subheading {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 1.4em;
+        letter-spacing: 0.01em;
+        line-height: 1.4;
+        margin-bottom: 30px;
+        opacity: 0.9;
     }
 
     header {
@@ -282,217 +308,35 @@
             <img src="imgs/menu_icon.png" alt="Menu Icon">
         </div>
         <nav>
-            <a href="#section1">Founders</a>
-            <a href="#section2">Angel Investors</a>
-            <a href="#section3">Learn</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="founders.html">Founders</a>
+            <a href="investors.html">Angel Investors</a>
+            <a href="learn.html">Learn</a>
+            <a href="articles.html">Articles</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
     
+    <main class="main-content">
 <section id="hero" style="position: relative; width: 100%; height: 360px; background-image: url('imgs/nasa_usa_night_sized.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: black;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
     <div style="position: relative; z-index: 1;">
-        <h1 style="font-size: 1.4em; margin-bottom: 20px;">Uniting Stanford's Startup Community Across the Country</h1>
-        <p style="font-size: 1.2em; margin-bottom: 30px;">connecting founders, investors, innovators and resources</p>
-        <div>
+                <h1 class="hero-heading">Uniting Stanford's Startup Community Across the Country</h1>
+                <p class="hero-subheading">connecting founders, investors, innovators and resources</p>
+                <div class="hero-buttons">
             <a href="https://bit.ly/pitchangels" target="_blank" style="text-decoration: none;">
-                <button style="background-color: #8C1515; color: white; border: none; padding: 15px 30px; margin: 0 10px; font-size: 1.0em; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;">Apply to Pitch</button>
+                        <button>Apply to Pitch</button>
             </a>
             <a href="https://groups.stanford.edu/topics/9391/memberships" target="_blank" style="text-decoration: none;">
-                <button style="background-color: #8C1515; color: white; border: none; padding: 15px 30px; margin: 0 10px; font-size: 1.0em; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;">Become an Angel</button>
+                        <button>Become an Angel</button>
             </a>
             <a href="https://groups.stanford.edu/topics/9391/events" target="_blank" style="text-decoration: none;">
-                <button style="background-color: #8C1515; color: white; border: none; padding: 15px 30px; margin: 0 10px; font-size: 1.0em; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;">Attend Events</button>
+                        <button>Attend Events</button>
             </a>
         </div>
     </div>
 </section>	
-	
-    <section id="section1" style="text-align: center;">
-      <!-- Content for section1 -->
-    <p style="font-weight: bold;">FOUNDERS</p>
-        <p><a href="https://bit.ly/pitchangels" target="_blank">Apply</a> to pitch to our angel members for your startup's fundraise at our next curated session.</p>
-        <p style="text-align: justify;">Entrepreneurs often face a lonely journey and we strive to change that independent of geography. 
-           To hear the latest from thought leaders in entrepreneurship, angel investing, venture capital, law, banking, accounting and more follow us on <a href="https://www.linkedin.com/company/stanfordunited" target="_blank">LinkedIn</a> to receive notices for upcoming remote events and programming. You may also bookmark our virtual <a href="https://bit.ly/stanfordunited" target="_blank">events page</a>.
-        
-          Don't miss your chance to pitch to a Midas investor! Or, get hands-on coaching during office hours with an industry veteran.</p>      
-        <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
-            <img src="imgs/white_up_arrow.png" alt="arrow up" style="height:25px; width:auto;">
-        </a>
-    </section>
-
-    <section id="section2" style="text-align: center;">
-      <!-- Content for section2 -->
-  <p style="font-weight: bold;">ANGEL INVESTORS</p>
-      <p>Become an official angel investor with <a href="https://groups.stanford.edu/topics/9391/memberships" target="_blank">membership</a> to support founders in our community. You must be an <a href="https://www.sec.gov/education/capitalraising/building-blocks/accredited-investor" target="_blank">accredited investor</a>.</p>
-      <p style="text-align: justify;">Angel members of our group gain access to exclusive investment opportunities with some of the most promising founders around. We have supported 140+ founders to date.
-      Engage in discussions, networking events, and contribute to the growth of innovative ventures.
-	Explore deep perspectives on angel investing through <a href="https://youtu.be/ljBOD7LImxA" target="_blank">Angel Investing 101</a>, <a href="https://youtu.be/AA8Z8ntZ0qQ" target="_blank">Angel Investing 102</a>, our Midas investor series, and <a href="https://youtube.com/@stanfordangels" target="_blank">more.</a></p>
-      <p style="text-align: justify;"> 
-	Note that Stanford Angels & Entrepreneurs United (SAEU) aims to provide a forum for interesting early stage companies at a fundraising stage to present. However SAEU is not a fund, does not do crowd sourced fundraising, nor does it provide investment advice or recommendations. Any due diligence, negotiation or investment activity conducted by members or officers of SAEU is conducted solely as an individual of their own accord as an accredited investor, not as an officer or representative of SAEU, Stanford University, or Stanford Alumni Association. Stanford University and Stanford Alumni Association are not in any way endorsing or assessing the companies or entrepreneurs who present at SAEU nor are they involved in SAEU members or officers’ individual investment decisions regarding these companies.
-	</p>
-    
-        <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
-            <img src="imgs/crimson_up_arrow.png" alt="arrow up" style="height:25px; width:auto;">
-        </a>
-    </section>
-
-    <section id="section3" style="text-align: center;">
-      <!-- Content for section3 -->
-  <p style="font-weight: bold;">LEARN</p>
-      <p>Brush up on startup formation, equity, accelerators, fundraising, Midas investor lessons and much more from our educational <a href="https://youtube.com/@stanfordangels" target="_blank">recorded events</a></p>    
-        <div class="carousel-container">
-          <!-- Carousel content -->
-	  <div class="video-card">
-	    <a href="https://youtu.be/MC45wKciog8" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_InvestAIStartups.jpg" alt="How to Invest in AI Startups" width="300" height="auto"></a>
-	  </div>			
-	  <div class="video-card">
-	    <a href="https://youtu.be/BVsriQyjf9w" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_Intro_InvestSustainabilityStartups.jpg" alt="How to Invest in Sustainability Startups" width="300" height="auto"></a>
-	  </div>			
-	  <div class="video-card">
-	    <a href="https://youtu.be/Qq04oJs55u8" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_VentureTrendsOutlook2025.jpg" alt="Venture Trends and 2025 Outlook" width="300" height="auto"></a>
-	  </div>		
-	  <div class="video-card">
-	    <a href="https://youtu.be/snZOGbdgxjQ" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_VentureTrendsOutlook2024.jpg" alt="Venture Trends and 2024 Outlook" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/AA8Z8ntZ0qQ" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_AngelInvesting102.jpg" alt="Angel Investing 102" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/ljBOD7LImxA" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_AngelInvesting101.jpg" alt="Angel Investing 101" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/1RraJGRp-2o" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_Accelerators.jpg" alt="Startup Accelerators Unpacked" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/olx69t7q3Jw" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_DownRounds.jpg" alt="Legal Series: Down Rounds" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/WzIbh067DLk" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_Midas_AnnMiuraKo.jpg" alt="Midas Investor: Ann Miura-Ko" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/hCFP_glxEq0" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_EquityCrowdfunding.jpg" alt="Equity Crowdfunding" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/VLxqo7e0ke0" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_Midas_ScottSandell.jpg" alt="Midas Investor: Scott Sandell" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/5T94jPXDp2Q" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_StartupTaxes101.jpg" alt="Startup Taxes 101" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/gs1U3B1VmrU" target="_blank">
-      <img src="imgs/thumb/StanfordAngels_CareersVentureCapital.jpg" alt="Careers in Venture Capital" width="300" height="auto"></a>
-	  </div>
-	  <div class="video-card">
-	    <a href="https://youtu.be/eZwGwt5ZtO4" target="_blank">
-	      <img src="imgs/thumb/StanfordAngels_RaisingUnicorn.jpg" alt="Raising A Unicorn" width="300" height="auto"></a>
-	  </div>
-	</div>
-	  <!-- End Carousel content -->
-		
-	<a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
-            <img src="imgs/white_up_arrow.png" alt="arrow up" style="height:25px; width:auto;">
-        </a>
-    </section>
-
-    <section id="about" style="text-align: center;">
-        <!-- Content for About section -->
-<p style="font-weight: bold;">ABOUT</p>
-    <p style="text-align: justify;">Our mission is to unite Stanford's startup community in innovation centers beyond California with regular remote programming and connection opportunities. In Spring 2020, we started our journey with an official charter from Stanford Alumni Association. We have grown to a community of 1500 alumni members since. Our community attracts a wide variety of Stanford alumni and students from different generations, regions, industries and backgrounds united by a common entrepreneurial spirit. Connect with members of our leadership team to share your feedback and suggestions for our community.</p>
-
-    <div id="leadership-container" class="about-carousel-container">
-          <!-- Leadership team thumbnails -->
-<!-- Add team member thumbnails dynamically here with the "about-thumbnails" class -->
-        <div class="about-thumbnails">
-            <img src="imgs/team/SheilaPresident.jpg" alt="Sheila Proeve">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/sproeve" target="_blank">Sheila Proeve</a></div>
-            <div class="leader-title">Co-President, Board, Co-founder</div>
-        </div>
-
-	<div class="about-thumbnails">
-            <img src="imgs/team/TundeTreasurer.jpg" alt="Tunde Oshinowo">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/tundeoshinowo" target="_blank">Tunde Oshinowo</a></div>
-            <div class="leader-title">Treasurer, Board, Co-founder</div>
-        </div>
-
-	<div class="about-thumbnails">
-            <img src="imgs/team/RichardHartung.jpg" alt="Richard Hartung">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/rihartung" target="_blank">Richard Hartung</a></div>
-            <div class="leader-title">Co-President</div>
-        </div>
-	    
-	<div class="about-thumbnails">
-            <img src="imgs/team/UmaKaundinya.jpg" alt="Uma Kaundinya">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/umaskaundinya" target="_blank">Uma Kaundinya</a></div>
-            <div class="leader-title">Investment Committee</div>
-        </div>
-	    
-	<div class="about-thumbnails">
-            <img src="imgs/team/Jonathan.jpg" alt="Jonathan Turk">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/jonathan-turk-79aa9914" target="_blank">Jonathan Turk</a></div>
-            <div class="leader-title">Board, Co-founder</div>
-        </div>
-	
-	<div class="about-thumbnails">
-            <img src="imgs/team/ProfChuckEesley.jpg" alt="Professor Chuck Eesley">
-            <div class="leader-name"><a href="https://profiles.stanford.edu/charles-eesley" target="_blank">Professor Chuck Eesley</a></div>
-            <div class="leader-title">Board</div>
-        </div>
-
-	<div class="about-thumbnails">
-            <img src="imgs/team/SaleKwon.jpg" alt="Sale Kwon">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/sale-kwon-b1a698b" target="_blank">Sale Kwon</a></div>
-            <div class="leader-title">Board</div>
-        </div>
-
-	<div class="about-thumbnails">
-            <img src="imgs/team/MichelleGray.jpg" alt="Michelle Gray">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/michelle-gray-994b91" target="_blank">Michelle Gray</a></div>
-            <div class="leader-title">Investment Committee</div>
-        </div>
-
-	<div class="about-thumbnails">
-            <img src="imgs/team/SonaWang.jpg" alt="Sona Wang">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/sona-wang-a439723" target="_blank">Sona Wang</a></div>
-            <div class="leader-title">Investment Committee</div>
-        </div>
-
-	<div class="about-thumbnails">
-            <img src="imgs/team/SeemaHeadComm.jpg" alt="Seema Somani">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/ssomani" target="_blank">Seema Somani</a></div>
-            <div class="leader-title">SME Committee</div>
-        </div>    
-
-	<div class="about-thumbnails">
-            <img src="imgs/team/Alex.jpg" alt="Alex Montalbini">
-            <div class="leader-name"><a href="https://www.linkedin.com/in/alexmontalbini" target="_blank">Alex Montalbini</a></div>
-            <div class="leader-title">Board Emeritus, Co-founder</div>
-        </div>
-	    
-	<div class="about-thumbnails">
-            <img src="imgs/team/BlankPortrait.jpg" alt="Prospective Leader">
-            <div class="leader-name"><a href="https://bit.ly/leadstanford" target="_blank">Open Role(s)</a></div>
-            <div class="leader-title">Prospective Leader</div>
-        </div>	
-	    
-    </div>
-        <a href="#toTop" style="position: absolute; right: 20px; font-size: 25px;">
-            <img src="imgs/crimson_up_arrow.png" alt="arrow up" style="height:25px; width:auto;">
-        </a>
-    </section>
+    </main>
 
     <footer id="contact" style="text-align: center; padding: 20px; background-color: #8C1515; color: #fff;">
         <!-- Copyright sign and organization name -->
