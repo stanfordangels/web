@@ -276,8 +276,6 @@ footer {
     .about-thumbnails {
         flex: 0 0 calc(50% - 20px);
     }
-<<<<<<< HEAD
-=======
 }
 
 /* Articles Styles */
@@ -491,5 +489,4 @@ footer {
     .article-content {
         font-size: 1em;
     }
->>>>>>> modernize-tabs
 } 
