@@ -245,10 +245,12 @@ footer {
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
+        pointer-events: none; /* Prevent blocking clicks when hidden */
     }
 
     nav.show-menu {
         display: flex;
+        pointer-events: auto; /* Re-enable clicks when visible */
     }
 
     nav a {
@@ -260,7 +262,7 @@ footer {
         cursor: pointer;
         padding: 15px;
         position: relative;
-        z-index: 1001;
+        z-index: 9999; /* Much higher z-index to ensure it's on top */
         -webkit-tap-highlight-color: transparent;
         background-color: rgba(255, 0, 0, 0.3); /* Temporary red background for debugging */
         border: 2px solid red; /* Temporary red border for debugging */
