@@ -304,9 +304,11 @@
 <body>
     <header>
         <img id="logo" src="imgs/StanfordAngelsLogo_50pt.jpg" alt="Stanford Angels & Entrepreneurs United Logo">
-        <div class="menu-icon">
-            <img src="imgs/menu_icon.png" alt="Menu Icon">
-        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
         <nav>
             <a href="index.html">Home</a>
             <a href="entrepreneurs.html">Entrepreneurs</a>
@@ -360,10 +362,10 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const menuIcon = document.querySelector(".menu-icon");
+            const menuToggle = document.querySelector(".menu-toggle");
             const nav = document.querySelector("nav");
 
-            menuIcon.addEventListener("click", function () {
+            menuToggle.addEventListener("click", function () {
                 nav.classList.toggle("show-menu");
             });
         });
