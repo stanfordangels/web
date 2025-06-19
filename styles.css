@@ -220,11 +220,11 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
     flex-direction: column;
     justify-content: space-around;
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
 }
 
 .hamburger-line {
@@ -265,33 +265,34 @@ footer {
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        pointer-events: none; /* Prevent blocking clicks when hidden */
+        padding: 20px;
     }
 
     nav.show-menu {
         display: flex;
-        pointer-events: auto; /* Re-enable clicks when visible */
     }
 
     nav a {
-        margin: 10px 0;
+        display: block;
+        margin: 8px 0;
+        padding: 12px 0;
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    nav a:hover {
+        background-color: #f5f5f5;
+        color: #8C1515;
     }
 
     .menu-toggle {
-        display: block;
-        cursor: pointer;
-        padding: 20px; /* Larger touch target */
-        position: absolute;
-        top: 0;
-        right: 0;
+        display: flex;
+        position: relative;
         z-index: 9999;
         -webkit-tap-highlight-color: transparent;
-    }
-
-    .menu-toggle img {
-        width: 24px;
-        height: 24px;
-        display: block;
     }
 
     .hero-buttons {
