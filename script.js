@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM loaded, setting up mobile menu");
     
-    const menuIcon = document.querySelector(".menu-icon");
+    const menuToggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector("nav");
     
-    console.log("Menu icon found:", menuIcon);
+    console.log("Menu toggle found:", menuToggle);
     console.log("Nav found:", nav);
     
-    if (menuIcon && nav) {
+    if (menuToggle && nav) {
         
         function toggleMenu(e) {
             console.log("Menu toggle triggered!");
@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
         // Add multiple event listeners for better mobile support
-        menuIcon.addEventListener("click", toggleMenu);
-        menuIcon.addEventListener("touchstart", toggleMenu);
-        menuIcon.addEventListener("touchend", function(e) {
+        menuToggle.addEventListener("click", toggleMenu);
+        menuToggle.addEventListener("touchstart", toggleMenu);
+        menuToggle.addEventListener("touchend", function(e) {
             e.preventDefault();
         });
         
         console.log("Event listeners added successfully");
     } else {
-        console.error("Menu icon or nav not found!", { menuIcon, nav });
+        console.error("Menu toggle or nav not found!", { menuToggle, nav });
     }
 }); 

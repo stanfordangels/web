@@ -215,8 +215,24 @@ footer {
     text-decoration: underline;
 }
 
-.menu-icon {
+.menu-toggle {
     display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 44px;
+    height: 44px;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 2px 0;
+    transition: 0.3s;
 }
 
 /* Ensure navigation is always visible on desktop */
@@ -261,7 +277,7 @@ footer {
         margin: 10px 0;
     }
 
-    .menu-icon {
+    .menu-toggle {
         display: block;
         cursor: pointer;
         padding: 20px; /* Larger touch target */
@@ -272,7 +288,7 @@ footer {
         -webkit-tap-highlight-color: transparent;
     }
 
-    .menu-icon img {
+    .menu-toggle img {
         width: 24px;
         height: 24px;
         display: block;
