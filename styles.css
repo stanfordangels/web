@@ -257,6 +257,17 @@ footer {
 
     .menu-icon {
         display: block;
+        cursor: pointer;
+        padding: 15px;
+        position: relative;
+        z-index: 1001;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .menu-icon img {
+        width: 24px;
+        height: 24px;
+        display: block;
     }
 
     .hero-buttons {
