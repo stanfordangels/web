@@ -262,6 +262,9 @@ footer {
         position: relative;
         z-index: 1001;
         -webkit-tap-highlight-color: transparent;
+        background-color: rgba(255, 0, 0, 0.3); /* Temporary red background for debugging */
+        border: 2px solid red; /* Temporary red border for debugging */
+        pointer-events: auto;
     }
 
     .menu-icon img {
