@@ -234,6 +234,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -260,13 +264,12 @@ footer {
     .menu-icon {
         display: block;
         cursor: pointer;
-        padding: 15px;
-        position: relative;
-        z-index: 9999; /* Much higher z-index to ensure it's on top */
+        padding: 20px; /* Larger touch target */
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 9999;
         -webkit-tap-highlight-color: transparent;
-        background-color: rgba(255, 0, 0, 0.3); /* Temporary red background for debugging */
-        border: 2px solid red; /* Temporary red border for debugging */
-        pointer-events: auto;
     }
 
     .menu-icon img {

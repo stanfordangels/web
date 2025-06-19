@@ -8,16 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Nav found:", nav);
     
     if (menuIcon && nav) {
-        menuIcon.addEventListener("click", function (e) {
-            console.log("Menu icon clicked!");
+        
+        function toggleMenu(e) {
+            console.log("Menu toggle triggered!");
             e.preventDefault();
+            e.stopPropagation();
             nav.classList.toggle("show-menu");
             console.log("Nav classes after toggle:", nav.className);
-        });
+        }
         
-        // Add visual feedback for debugging
-        menuIcon.addEventListener("touchstart", function() {
-            console.log("Touch start on menu icon");
+        // Add multiple event listeners for better mobile support
+        menuIcon.addEventListener("click", toggleMenu);
+        menuIcon.addEventListener("touchstart", toggleMenu);
+        menuIcon.addEventListener("touchend", function(e) {
+            e.preventDefault();
         });
         
         console.log("Event listeners added successfully");
