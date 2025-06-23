@@ -1,6 +1,17 @@
 // Articles data - this could later be loaded from a JSON file or API
 const articlesData = [
     {
+        id: 2,
+        slug: "q2-newsletter",
+        title: "Q2 Newsletter",
+        author: "Stanford Angels & Entrepreneurs United",
+        date: "2025-05-01",
+        excerpt: "Q2 2025 Newsletter featuring upcoming events including our AI startup investing webinar, summer networking mixers across the country, community updates from Miami and DC, co-founder classifieds, and insights from recent pitch events and sustainability investing webinar.",
+        content: `This content is loaded from the separate HTML file.`,
+        tags: ["Newsletter", "Events", "AI", "Networking", "Sustainability"],
+        readTime: "15 min read"
+    },
+    {
         id: 1,
         slug: "q1-newsletter",
         title: "Q1 Newsletter",

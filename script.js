@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Menu toggle triggered!");
             e.preventDefault();
             e.stopPropagation();
-            nav.classList.toggle("show-menu");
+        nav.classList.toggle("show-menu");
             console.log("Nav classes after toggle:", nav.className);
         }
         
