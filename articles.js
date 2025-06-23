@@ -7,8 +7,7 @@ const articlesData = [
         author: "Stanford Angels & Entrepreneurs United",
         date: "2025-05-01",
         excerpt: "Q2 2025 Newsletter featuring upcoming events including our AI startup investing webinar, summer networking mixers across the country, community updates from Miami and DC, co-founder classifieds, and insights from recent pitch events and sustainability investing webinar.",
-        content: `This content is loaded from the separate HTML file.`,
-        tags: ["Newsletter", "Events", "AI", "Networking", "Sustainability"]
+        content: `This content is loaded from the separate HTML file.`
     },
     {
         id: 1,
@@ -17,8 +16,7 @@ const articlesData = [
         author: "Stanford Angels & Entrepreneurs United",
         date: "2025-02-01",
         excerpt: "Welcome to the inaugural Stanford Angels and Entrepreneurs United (SAEU) Newsletter! Inside, you'll find our group's upcoming remote and cross-country events, recaps of recent activities, and a new classifieds section.",
-        content: `This content is loaded from the separate HTML file.`,
-        tags: ["Newsletter", "Events", "Networking", "Pitch"]
+        content: `This content is loaded from the separate HTML file.`
     }
 ];
 
@@ -83,7 +81,7 @@ function loadIndividualArticle() {
         document.querySelector('.content-section').innerHTML = `
             <h1>Article Not Found</h1>
             <p>Sorry, the article you're looking for doesn't exist.</p>
-            <a href="articles.html" class="back-to-articles">← Back to News</a>
+            <a href="news.html" class="back-to-articles">← Back to News</a>
         `;
         return;
     }
@@ -92,7 +90,7 @@ function loadIndividualArticle() {
     if (articleContainer) {
         articleContainer.innerHTML = `
             <div class="article-navigation">
-                <a href="articles.html" class="back-to-articles">← Back to News</a>
+                <a href="news.html" class="back-to-articles">← Back to News</a>
             </div>
             <article class="individual-article-content">
                 <header class="article-header">
