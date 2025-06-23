@@ -1,6 +1,15 @@
 // Articles data - this could later be loaded from a JSON file or API
 const articlesData = [
     {
+        id: 3,
+        slug: "investing-ai-startups-warren-packard-amit-garg",
+        title: "Investing in AI Startups: A Conversation with Warren Packard and Amit Garg",
+        author: "Stanford Angels & Entrepreneurs United",
+        date: "2025-05-15",
+        excerpt: "Stanford Angels and Entrepreneurs (SAEU) hosted an online panel discussion in May 2025 on the topic of investing in AI startups. Warren Packard, a partner at the AI Fund, and Amit Garg, founder and a partner at Tau Venture, participated in the panel.",
+        content: `This content is loaded from the separate HTML file.`
+    },
+    {
         id: 2,
         slug: "q2-newsletter",
         title: "Q2 Newsletter",
