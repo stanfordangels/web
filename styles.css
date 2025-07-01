@@ -138,18 +138,18 @@ nav a:hover {
 }
 
 .about-carousel-container {
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 20px;
+    justify-items: center;
 }
 
 .about-thumbnails {
-    flex: 0 0 calc(25% - 20px);
-    margin-bottom: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-thumbnails img {
@@ -312,8 +312,10 @@ footer {
         padding: 30px 10px;
     }
 
-    .about-thumbnails {
-        flex: 0 0 calc(50% - 20px);
+    .about-carousel-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
     }
 }
 
