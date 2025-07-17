@@ -1,4 +1,4 @@
-// Real Stanford Angels events (ordered by date - earliest first)
+// Keep your original events data at the top (as fallback)
 const eventsData = [
     {
         id: 1,
@@ -42,6 +42,23 @@ const eventsData = [
     }
 ];
 
+// Function to load events (will use CMS data when available, fallback to hardcoded)
+async function loadEventsData() {
+    try {
+        const response = await fetch('/_events/events.json');
+        if (response.ok) {
+            const cmsEvents = await response.json();
+            console.log('Loaded events from CMS');
+            return cmsEvents;
+        }
+    } catch (error) {
+        console.log('CMS events not available, using fallback data');
+    }
+    
+    // Return original hardcoded data as fallback
+    return eventsData;
+}
+
 function formatEventDate(dateString) {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString(undefined, options);
@@ -61,7 +78,7 @@ function createEventCardHTML(event) {
                 </div>
             </div>
             <div class="article-excerpt">
-                <p>${event.excerpt}</p>
+                <p>${event.excerpt || event.body}</p>
             </div>
             <div class="article-actions">
                 <a href="${event.registrationLink}" target="_blank" class="read-article-btn">Register for Event</a>
@@ -70,7 +87,7 @@ function createEventCardHTML(event) {
     `;
 }
 
-function loadEventsList() {
+async function loadEventsList() {
     console.log('loadEventsList called');
     const container = document.getElementById('events-container');
     const loading = document.getElementById('loading');
@@ -83,9 +100,13 @@ function loadEventsList() {
         return;
     }
     
-    setTimeout(() => {
+    setTimeout(async () => {
         console.log('Loading events...');
-        const eventsHTML = eventsData.map(event => createEventCardHTML(event)).join('');
+        const events = await loadEventsData();
+        const eventsHTML = events
+            .filter(event => event.published !== false)
+            .map(event => createEventCardHTML(event))
+            .join('');
         container.innerHTML = eventsHTML;
         loading.style.display = 'none';
         container.style.display = 'block';

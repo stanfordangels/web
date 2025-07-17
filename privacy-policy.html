@@ -2,7 +2,8 @@
 <html lang="en" id="toTop">
 <head>
 <title>Stanford Angels & Entrepreneurs United - Privacy Policy</title>	
-    <meta name="description" content="Privacy Policy for Stanford Angels and Entrepreneurs United, connecting Stanford's startup community of founders, angel investors, venture capitalists, learning resources, pitch opportunities and more in innovation centers across the country.">	
+    <meta name="description" content="Privacy Policy for Stanford Angels and Entrepreneurs United, connecting Stanford's startup community of founders, angel investors, venture capitalists, learning resources, pitch opportunities and more in innovation centers across the country.">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 <h1>Privacy Policy</h1>
@@ -181,5 +182,16 @@
 <ul>
 <li>By email: saeunited@alumni.stanford.edu</li>
 </ul>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

@@ -12,6 +12,7 @@
 
   gtag('config', 'G-LVP92RX3BN');
 </script>	
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <!-- End of Google tag -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -413,6 +414,18 @@
                 nav.classList.toggle("show-menu");
             });
         });
+    </script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
     </script>
 
 </body>
