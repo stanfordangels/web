@@ -11,7 +11,7 @@ const eventsData = [
         type: "Networking"
     },
     {
-        id: 1,
+        id: 2,
         title: "Boston Summer Networking Mixer",
         date: "2025-08-20",
         time: "6:30 PM - 8:30 PM ET",
