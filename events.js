@@ -2,16 +2,6 @@
 const eventsData = [
     {
         id: 1,
-        title: "Virtual: Curated Pitch for Stanford Angels",
-        date: "2025-09-24",
-        time: "4:00 PM - 5:15 PM PT",
-        location: "Virtual Event (Zoom)",
-        excerpt: "Join Stanford Angels & Entrepreneurs United to hear pitches from 5-8 curated startups and meet the talented founders. This event is open to accredited investors with angel membership. To pitch your startup or recommend one to pitch at the event, please use this <a href='https://docs.google.com/forms/d/e/1FAIpQLSdP54E2BUUPD2mvc1DbIXt0cJE2n1CgVHbbyXLQtTd4KgaiGw/viewform' target='_blank'>form</a> to apply.",
-        registrationLink: "https://groups.stanford.edu/events/138262",
-        type: "Pitch Event"
-    },
-    {
-        id: 2,
         title: "DC Summer Networking Mixer",
         date: "2025-08-19",
         time: "6:30 PM - 8:30 PM ET",
@@ -21,7 +11,7 @@ const eventsData = [
         type: "Networking"
     },
     {
-        id: 3,
+        id: 1,
         title: "Boston Summer Networking Mixer",
         date: "2025-08-20",
         time: "6:30 PM - 8:30 PM ET",
@@ -31,13 +21,23 @@ const eventsData = [
         type: "Networking"
     },
     {
-        id: 4,
+        id: 3,
         title: "Virtual: Investing in Biotech & Medtech Startups",
         date: "2025-08-27",
         time: "4:00 PM - 5:00 PM PT",
         location: "Virtual Event (Zoom)",
         excerpt: "Join us for a panel discussion full of insights from leaders in early stage biotech and medtech investing.",
         registrationLink: "https://groups.stanford.edu/events/133370",
+        type: "Pitch Event"
+    },
+    {
+        id: 4,
+        title: "Virtual: Curated Pitch for Stanford Angels",
+        date: "2025-09-24",
+        time: "4:00 PM - 5:15 PM PT",
+        location: "Virtual Event (Zoom)",
+        excerpt: "Join Stanford Angels & Entrepreneurs United to hear pitches from 5-8 curated startups and meet the talented founders. This event is open to accredited investors with angel membership. To pitch your startup or recommend one to pitch at the event, please use this <a href='https://docs.google.com/forms/d/e/1FAIpQLSdP54E2BUUPD2mvc1DbIXt0cJE2n1CgVHbbyXLQtTd4KgaiGw/viewform' target='_blank'>form</a> to apply.",
+        registrationLink: "https://groups.stanford.edu/events/138262",
         type: "Pitch Event"
     }
 ];
