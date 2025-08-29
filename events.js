@@ -61,19 +61,14 @@ async function loadEventsData() {
 
 // === START CODE FOR Pacific Time FORMAT ===
 function formatEventDate(dateString) {
-    const [year, month, day] = dateString.split('-').map(Number);
-    
-    // Create a new Date object directly, preventing UTC misinterpretation.
-    const eventDate = new Date(year, month - 1, day); 
-    
-    const options = { 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric',
-        timeZone: 'America/Los_Angeles'
-    };
+  const [year, month, day] = dateString.split('-').map(Number);
 
-    return new Intl.DateTimeFormat('en-US', options).format(eventDate);
+  const months = [
+    "January","February","March","April","May","June",
+    "July","August","September","October","November","December"
+  ];
+
+  return `${months[month - 1]} ${day}, ${year}`;
 }
 // ====== END CODE FOR FORCING Pacific Time FORMAT =======
 
