@@ -59,7 +59,7 @@ async function loadEventsData() {
     return eventsData;
 }
 
-// === START CODE FOR Pacific Time FORMAT ===
+// === START CODE FOR Pacific Date FORMAT ===
 function formatEventDate(dateString) {
   const [year, month, day] = dateString.split('-').map(Number);
 
@@ -70,7 +70,7 @@ function formatEventDate(dateString) {
 
   return `${months[month - 1]} ${day}, ${year}`;
 }
-// ====== END CODE FOR FORCING Pacific Time FORMAT =======
+// ====== END CODE FOR FORCING Pacific Date FORMAT =======
 
 function createEventCardHTML(event) {
     return `
