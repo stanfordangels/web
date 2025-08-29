@@ -61,14 +61,15 @@ async function loadEventsData() {
 
 // === START CODE FOR Pacific Time FORMAT ===
 function formatEventDate(dateString) {
-    // Append time to ensure a specific point in time is created
-    const eventDate = new Date(dateString + 'T00:00:00'); 
+    // Create a new Date object from the YYYY-MM-DD string as UTC
+    // This prevents any local timezone offset from being applied initially
+    const eventDate = new Date(dateString + 'T00:00:00Z'); 
     
     const options = { 
         year: 'numeric', 
         month: 'long', 
         day: 'numeric',
-        timeZone: 'America/Los_Angeles' // Specify the IANA time zone identifier for PT
+        timeZone: 'America/Los_Angeles' // This correctly converts the UTC date to PT
     };
 
     return new Intl.DateTimeFormat('en-US', options).format(eventDate);
