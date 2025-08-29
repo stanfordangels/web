@@ -59,10 +59,21 @@ async function loadEventsData() {
     return eventsData;
 }
 
+// === START CODE FOR Pacific Time FORMAT ===
 function formatEventDate(dateString) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString(undefined, options);
+    // Append time to ensure a specific point in time is created
+    const eventDate = new Date(dateString + 'T00:00:00'); 
+    
+    const options = { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric',
+        timeZone: 'America/Los_Angeles' // Specify the IANA time zone identifier for PT
+    };
+
+    return new Intl.DateTimeFormat('en-US', options).format(eventDate);
 }
+// ====== END CODE FOR FORCING Pacific Time FORMAT =======
 
 function createEventCardHTML(event) {
     return `
