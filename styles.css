@@ -579,6 +579,26 @@ footer {
     animation: subtle-pulse 3s ease-in-out infinite;
 }
 
+/* Events sections styling */
+.events-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-family: 'Roboto', 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: #8C1515;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8C1515;
+    text-align: left;
+}
+
+.events-section:last-child {
+    margin-bottom: 40px;
+}
+
 /* Mobile responsive enhancements */
 @media screen and (max-width: 768px) {
     .section-header {
@@ -591,5 +611,14 @@ footer {
     .section-header h2 {
         font-size: 1.3em;
         letter-spacing: 0.5px;
+    }
+    
+    .section-title {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    .events-section {
+        margin-bottom: 40px;
     }
 } 
