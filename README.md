@@ -17,7 +17,7 @@
     id: [NEXT_NUMBER], // Use the next sequential number
     slug: "your-article-slug-here",
     title: "Your Article Title Here",
-    author: "Stanford Angels & Entrepreneurs United", // or specific author name
+    author: "Stanford Angels & Entrepreneurs Midwest", // or specific author name
     date: "2025-MM-DD", // Use YYYY-MM-DD format
     excerpt: "A brief 1-2 sentence summary of your article that will appear on the news page.",
     content: `This content is loaded from the separate HTML file.`

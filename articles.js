@@ -4,16 +4,16 @@ const articlesData = [
         id: 3,
         slug: "investing-ai-startups-warren-packard-amit-garg",
         title: "Investing in AI Startups: A Conversation with Warren Packard and Amit Garg",
-        author: "Stanford Angels & Entrepreneurs United",
+        author: "Stanford Angels & Entrepreneurs Midwest",
         date: "2025-05-15",
-        excerpt: "Stanford Angels and Entrepreneurs (SAEU) hosted an online panel discussion in May 2025 on the topic of investing in AI startups. Warren Packard, a partner at the AI Fund, and Amit Garg, founder and a partner at Tau Venture, participated in the panel.",
+        excerpt: "Stanford Angels and Entrepreneurs (SAEM) hosted an online panel discussion in May 2025 on the topic of investing in AI startups. Warren Packard, a partner at the AI Fund, and Amit Garg, founder and a partner at Tau Venture, participated in the panel.",
         content: `This content is loaded from the separate HTML file.`
     },
     {
         id: 2,
         slug: "q2-newsletter",
         title: "Q2 Newsletter",
-        author: "Stanford Angels & Entrepreneurs United",
+        author: "Stanford Angels & Entrepreneurs Midwest",
         date: "2025-05-01",
         excerpt: "Q2 2025 Newsletter featuring upcoming events including our AI startup investing webinar, summer networking mixers across the country, community updates from Miami and DC, co-founder classifieds, and insights from recent pitch events and sustainability investing webinar.",
         content: `This content is loaded from the separate HTML file.`
@@ -22,9 +22,9 @@ const articlesData = [
         id: 1,
         slug: "q1-newsletter",
         title: "Q1 Newsletter",
-        author: "Stanford Angels & Entrepreneurs United",
+        author: "Stanford Angels & Entrepreneurs Midwest",
         date: "2025-02-01",
-        excerpt: "Welcome to the inaugural Stanford Angels and Entrepreneurs United (SAEU) Newsletter! Inside, you'll find our group's upcoming remote and cross-country events, recaps of recent activities, and a new classifieds section.",
+        excerpt: "Welcome to the inaugural Stanford Angels and Entrepreneurs Midwest (SAEM) Newsletter! Inside, you'll find our group's upcoming remote and cross-country events, recaps of recent activities, and a new classifieds section.",
         content: `This content is loaded from the separate HTML file.`
     }
 ];

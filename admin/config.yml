@@ -28,7 +28,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string", default: "Stanford Angels & Entrepreneurs United"}
+      - {label: "Author", name: "author", widget: "string", default: "Stanford Angels & Entrepreneurs Midwest"}
       - {label: "Date", name: "date", widget: "date"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Content", name: "body", widget: "markdown"}

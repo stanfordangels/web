@@ -37,7 +37,7 @@ const eventsData = [
         date: "2025-09-24",
         time: "4:00 PM - 5:15 PM PT",
         location: "Virtual Event (Zoom)",
-        excerpt: "Join Stanford Angels & Entrepreneurs United to hear pitches from 5-8 curated startups and meet the talented founders. This event is open to accredited investors with angel membership.",
+        excerpt: "Join Stanford Angels & Entrepreneurs Midwest to hear pitches from 5-8 curated startups and meet the talented founders. This event is open to accredited investors with angel membership.",
         registrationLink: "https://groups.stanford.edu/events/138262",
         type: "Pitch Event"
     },
@@ -58,7 +58,7 @@ const eventsData = [
         date: "2025-07-15",
         time: "4:00 PM - 5:15 PM PT",
         location: "Virtual Event (Zoom)",
-        excerpt: "Join Stanford Angels & Entrepreneurs United to hear pitches from 5-8 curated startups and meet the talented founders.",
+        excerpt: "Join Stanford Angels & Entrepreneurs Midwest to hear pitches from 5-8 curated startups and meet the talented founders.",
         registrationLink: "https://groups.stanford.edu/events/127932",
         type: "Pitch Event"
     },
@@ -78,7 +78,7 @@ const eventsData = [
         date: "2025-03-27",
         time: "1:30 PM - 2:30 PM ET",
         location: "XO Espresso Bar, Miami Beach, FL",
-        excerpt: "SAEU co-hosted an in-person alumni networking reception across the street from the eMerge Americas Conference in Miami Beach.",
+        excerpt: "SAEM co-hosted an in-person alumni networking reception across the street from the eMerge Americas Conference in Miami Beach.",
         registrationLink: "https://groups.stanford.edu/events/117227",
         type: "Networking"
     },
@@ -88,7 +88,7 @@ const eventsData = [
         date: "2025-04-22",
         time: "6:30 PM ET",
         location: "1299 Pennsylvania Ave, Washington DC",
-        excerpt: "SAEU hosted an in-person networking meet up for Stanford alumni angels and founders in the Washington DC, Virginia and Maryland metro area.",
+        excerpt: "SAEM hosted an in-person networking meet up for Stanford alumni angels and founders in the Washington DC, Virginia and Maryland metro area.",
         registrationLink: "https://groups.stanford.edu/events/117227",
         type: "Networking"
     }
